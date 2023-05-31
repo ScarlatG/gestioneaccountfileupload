@@ -1,6 +1,6 @@
-<%@page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!doctype html>
 <html lang="it" class="h-100">
 
@@ -40,8 +40,7 @@
                     <h5>Lista dei risultati</h5>
                 </div>
                 <div class='card-body'>
-                    <a class="btn btn-primary"
-                        href="${pageContext.request.contextPath}/account/insert">Aggiungi Nuovo</a>
+                    <a class="btn btn-primary" href="${pageContext.request.contextPath}/account/insert">Aggiungi Nuovo</a>
 
                     <div class='table-responsive'>
                         <table class='table table-striped'>
@@ -69,8 +68,7 @@
                                         </td>
                                         <td>
                                             <a class="btn btn-sm btn-outline-secondary"
-                                                href="${pageContext.request.contextPath}/account/showAccount/${accountItem.id}">Visualizza
-                                                Allegato</a>
+                                                href="${pageContext.request.contextPath}/account/show/${accountItem.id}">Visualizza</a>
                                         </td>
                                     </tr>
                                 </c:forEach>
